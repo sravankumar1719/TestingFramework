@@ -19,7 +19,7 @@ namespace AutomationFramework.Tests.SwagLabsTests
         [Trait("Category", "AddToCart")]
         public void AddToCartFunctionalityTest()
         {
-            Console.WriteLine("Test case : AddToCartFunctionalityTest()");
+            _outputHelper.WriteLine("Test case : AddToCartFunctionalityTest()");
 
             List<string> InventoryNames = new List<string>() { "Sauce Labs Backpack", "Sauce Labs Bolt T-Shirt", "Sauce Labs Fleece Jacket" };
             var swagLabHomePage = this.GetHomePage<SwagLabsHomePage>();
