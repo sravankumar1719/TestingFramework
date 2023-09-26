@@ -1,6 +1,4 @@
-﻿using AutomationFramework.Utilities;
-using OpenQA.Selenium;
-using static System.Net.Mime.MediaTypeNames;
+﻿using OpenQA.Selenium;
 
 namespace AutomationFramework.PageComponents.Pages.SwagLabs
 {
