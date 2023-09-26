@@ -1,5 +1,8 @@
 ﻿using OpenQA.Selenium.Support.Extensions;
+using System.IO;
+using System;
 using System.Reflection;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace AutomationTestingFramework.Utilities
 {

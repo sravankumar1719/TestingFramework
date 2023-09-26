@@ -1,6 +1,8 @@
 ﻿using AutomationTestingFramework.PageComponents.Pages;
 using AutomationTestingFramework.Utilities;
 using AutomationTestingFramework.Utilities.Enum;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Linq;
 using System.Text;
 
 namespace AutomationTestingFramework.Tests

@@ -1,5 +1,7 @@
 ﻿using AutomationTestingFramework.Utilities;
 using OpenQA.Selenium;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace AutomationTestingFramework.PageComponents.Pages.SwagLabsPage
 {

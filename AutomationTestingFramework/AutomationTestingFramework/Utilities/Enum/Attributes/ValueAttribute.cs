@@ -1,4 +1,6 @@
-﻿namespace AutomationTestingFramework.Utilities.Enum.Attributes
+﻿using System;
+
+namespace AutomationTestingFramework.Utilities.Enum.Attributes
 {
     public class ValueAttribute : Attribute
     {

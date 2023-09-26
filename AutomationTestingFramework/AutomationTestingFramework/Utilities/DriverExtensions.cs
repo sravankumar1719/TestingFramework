@@ -2,7 +2,11 @@
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
+using System.Collections.Generic;
+using System.Threading;
+using System;
 using SeleniumExtras.WaitHelpers;
+using System.Linq;
 
 namespace AutomationTestingFramework.Utilities
 {
@@ -14,8 +18,8 @@ namespace AutomationTestingFramework.Utilities
         {
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.AddArgument("--start-maximized");
-            //driver.Value = driver.Value ?? new ChromeDriver(AppConfiguration.GetChromeDriverPath());
-            driver.Value = driver.Value ?? new RemoteWebDriver(new Uri(AppConfiguration.GetSeleniumGridServer()), chromeOptions.ToCapabilities());
+            driver.Value = driver.Value ?? new ChromeDriver(AppConfiguration.GetChromeDriverPath());
+            //driver.Value = driver.Value ?? new RemoteWebDriver(new Uri(AppConfiguration.GetSeleniumGridServer()), chromeOptions.ToCapabilities());
             return driver.Value;
         }
 

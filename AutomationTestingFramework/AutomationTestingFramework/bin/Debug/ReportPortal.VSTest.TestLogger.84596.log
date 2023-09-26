@@ -1,0 +1,25 @@
+ReportPortalLogger Error: 0 : 16:41:09.8910854 : 2-Test Runner : Unexpected exception in Initialize: System.IO.FileNotFoundException: Could not load file or assembly 'System.Text.Json, Version=6.0.0.6, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+File name: 'System.Text.Json, Version=6.0.0.6, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'
+   at ReportPortal.Shared.Configuration.Providers.JsonFileConfigurationProvider.GetFlattenProperties(String json)
+   at ReportPortal.Shared.Configuration.Providers.JsonFileConfigurationProvider.Load()
+   at ReportPortal.Shared.Configuration.ConfigurationBuilder.Build()
+   at ReportPortal.VSTest.TestLogger.ReportPortalLogger.Initialize(TestLoggerEvents events, String testRunDirectory) in C:\projects\agent-net-vstest\src\ReportPortal.VSTest.TestLogger\ReportPortalLogger.cs:line 66
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+ReportPortalLogger Error: 0 : 16:41:09.9230851 : 2-Test Runner : Unexpected exception in Initialize: System.IO.FileNotFoundException: Could not load file or assembly 'System.Text.Json, Version=6.0.0.6, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+File name: 'System.Text.Json, Version=6.0.0.6, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'
+   at ReportPortal.Shared.Configuration.Providers.JsonFileConfigurationProvider.GetFlattenProperties(String json)
+   at ReportPortal.Shared.Configuration.Providers.JsonFileConfigurationProvider.Load()
+   at ReportPortal.Shared.Configuration.ConfigurationBuilder.Build()
+   at ReportPortal.VSTest.TestLogger.ReportPortalLogger.Initialize(TestLoggerEvents events, String testRunDirectory) in C:\projects\agent-net-vstest\src\ReportPortal.VSTest.TestLogger\ReportPortalLogger.cs:line 80
+   at ReportPortal.VSTest.TestLogger.ReportPortalLogger.Initialize(TestLoggerEvents events, Dictionary`2 parameters) in C:\projects\agent-net-vstest\src\ReportPortal.VSTest.TestLogger\ReportPortalLogger.cs:line 93
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+

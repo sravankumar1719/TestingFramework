@@ -1,5 +1,6 @@
 ﻿using AutomationTestingFramework.Utilities;
 using log4net;
+using System.Linq;
 using System.Reflection;
 
 namespace AutomationTestingFramework.PageComponents.Pages

@@ -1,5 +1,6 @@
 ﻿using AutomationTestingFramework.Utilities;
 using OpenQA.Selenium;
+using System.Linq;
 
 namespace AutomationTestingFramework.PageComponents.Pages.SwagLabsPage
 {
@@ -21,7 +22,7 @@ namespace AutomationTestingFramework.PageComponents.Pages.SwagLabsPage
 
         public string GetUserName()
         {
-            var userNamesList = DriverExtensions.GetWebDriver().GetElement(AcceptedUserNamesLocator).Text.Split("\r\n").Skip(1);
+            var userNamesList = DriverExtensions.GetWebDriver().GetElement(AcceptedUserNamesLocator).Text.Split(new string[] { "\r\n" }, System.StringSplitOptions.None).Skip(1);
             string userName = userNamesList.ElementAt(0);
             this.Log.Info($"The username to login : {userName}");
             return userName;
@@ -29,7 +30,7 @@ namespace AutomationTestingFramework.PageComponents.Pages.SwagLabsPage
 
         public string GetPasswordText()
         {
-            string passwordText = DriverExtensions.GetWebDriver().GetElement(PasswordForUsersLocator).Text.Split("\r\n").Skip(1).First();
+            string passwordText = DriverExtensions.GetWebDriver().GetElement(PasswordForUsersLocator).Text.Split(new string[] { "\r\n" }, System.StringSplitOptions.None).Skip(1).First();
             this.Log.Info($"The password to login : {passwordText}");
             return passwordText;
         }

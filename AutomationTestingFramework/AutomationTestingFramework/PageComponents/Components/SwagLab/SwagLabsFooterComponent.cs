@@ -2,6 +2,9 @@
 using AutomationTestingFramework.PageComponents.Pages;
 using AutomationTestingFramework.Utilities;
 using OpenQA.Selenium;
+using System.Collections.Generic;
+using System.Linq;
+using System;
 
 namespace AutomationTestingFramework.PageComponents.Components.SwagLab
 {
