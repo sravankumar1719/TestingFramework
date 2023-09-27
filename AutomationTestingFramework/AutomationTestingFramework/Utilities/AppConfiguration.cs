@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using AutomationTestingFramework.Utilities.Enum;
+using Microsoft.Extensions.Configuration;
+using System;
 using System.IO;
 using System.Reflection;
 
@@ -6,12 +8,9 @@ namespace AutomationTestingFramework.Utilities
 {
     public static class AppConfiguration
     {
-        private static IConfiguration _configuration;
-
         public static string GetChromeDriverPath()
         {
-            _configuration = GetConfiguration();
-            return _configuration["DriverLocation:ChromeBrowser"];
+            return GetConfiguration()["DriverLocation:ChromeBrowser"];
         }
 
         public static string GetApplicationUrl(string applicationName)
@@ -22,6 +21,13 @@ namespace AutomationTestingFramework.Utilities
         public static string GetSeleniumGridServer()
         {
             return GetConfiguration()[$"SeleniumGridServer:Server"];
+        }
+
+        public static DriverType GetDriverType()
+        {
+            var driverType = Environment.GetEnvironmentVariable("DriverType"); //GetConfiguration()[$"DriverType:Driver"];
+            System.Enum.TryParse(driverType, out DriverType expectedDriverType);
+            return expectedDriverType;
         }
 
         private static IConfiguration GetConfiguration()

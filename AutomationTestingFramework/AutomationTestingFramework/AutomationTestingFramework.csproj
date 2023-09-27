@@ -181,6 +181,7 @@
     <Compile Include="Utilities\EnumExtensions.cs" />
     <Compile Include="Utilities\Enum\AssertOutcome.cs" />
     <Compile Include="Utilities\Enum\Attributes\ValueAttribute.cs" />
+    <Compile Include="Utilities\Enum\DriverType.cs" />
     <Compile Include="Utilities\ScreenShotTaker.cs" />
     <Compile Include="Utilities\SoftAssertions.cs" />
   </ItemGroup>

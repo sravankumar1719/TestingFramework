@@ -48,6 +48,7 @@ namespace AutomationTestingFramework.Tests
         [TestInitialize]
         public virtual void InitSetUp()
         {
+            DriverExtensions.LaunchWebDriver();
             DriverExtensions.GetWebDriver().NavigateToApplicationUrl(ApplicationName);
             DriverExtensions.GetWebDriver().WaitForPageLoad();
         }
