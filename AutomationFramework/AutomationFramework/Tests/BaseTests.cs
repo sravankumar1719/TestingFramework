@@ -16,6 +16,7 @@ namespace AutomationFramework.Tests
 
         public BaseTests(string applicationName, ITestOutputHelper outputHelper)
         {
+            DriverExtensions.LaunchWebDriver();
             DriverExtensions.GetWebDriver().NavigateToApplicationUrl(applicationName);
             _outputHelper = outputHelper;
         }
