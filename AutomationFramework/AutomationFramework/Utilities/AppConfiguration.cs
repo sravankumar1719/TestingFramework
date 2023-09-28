@@ -27,8 +27,9 @@ namespace AutomationFramework.Utilities
         public static DriverType GetDriverType()
         {
             var driverType = Environment.GetEnvironmentVariable("DriverType"); //GetConfiguration()[$"DriverType:Driver"];
-            System.Enum.TryParse(driverType, out DriverType expectedDriverType);
-            return expectedDriverType;
+            return (DriverType)System.Enum.Parse(typeof(DriverType), driverType);
+            //System.Enum.TryParse(driverType, out DriverType expectedDriverType);
+            //return expectedDriverType;
         }
 
         private static IConfiguration GetConfiguration()
