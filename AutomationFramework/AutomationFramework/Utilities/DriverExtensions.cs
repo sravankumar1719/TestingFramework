@@ -27,7 +27,7 @@ namespace AutomationFramework.Utilities
                     driver.Value = new RemoteWebDriver(new Uri(AppConfiguration.GetSeleniumGridServer()), chromeOptions.ToCapabilities());
                     break;
                 default:
-                    driver.Value = new ChromeDriver(AppConfiguration.GetChromeDriverPath());
+                    driver.Value = null;
                     break;
             }
         }
